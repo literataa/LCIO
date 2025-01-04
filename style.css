@@ -38,13 +38,13 @@ body {
 .navbar {
   background: #ffffff;
   width: 100%;
-  padding: 10px 0;
+  padding: 20px 0;
   }
 
   .content {
   max-width: 1300px;
   margin: auto;
-  padding: 0 30px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,7 +59,7 @@ body {
   .nav-links a {
     text-decoration: none;
     color: #333;
-    font-size: 16px;
+    font-size: 18px;
     transition: color 0.3s ease, text-decoration 0.3s ease;
   }
 
@@ -111,6 +111,7 @@ body {
   .dropdown-content a:first-child {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
+    padding-top: 14px;
   }
 
   .dropdown-content a:last-child {
@@ -121,9 +122,59 @@ body {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  .isi {
+    display: flex;
+    flex: auto;
+  }
+  .massage {
+    font-family: Mattone;
+    font-size: 40px;
+    margin-left: 80px;
+    margin-right: 10px;
+    max-width: 60%;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 80px;
+  }
+
+  .white-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 80px;
+    max-width: 35%;
+
+  }
+
+
+  @media (max-width: 1023px) {
+    .massage {
+      font-size: 35px;
+      
+      margin-left: 60px;
+      max-width: 70%;
+    }
+  }
+  @media (max-width: 919px) {
+    .massage {
+      font-size: 33px;
+      margin-left: 40px;
+      margin-right: 10px;
+      max-width: 80%;
+    }
+
+    .white-box {
+      margin-left: 20px;
+      margin-right: 40px;
+      max-width: 40%;
+    }
+  }
 
   @media (max-width: 868px) {
-    .navbar, .content, .nav-links, .nav-links a, .dropdown-content, .dropdown-content a {
+    .navbar, .content, .nav-links, .nav-links a, .dropdown-content, .dropdown-content a, .isi, .massage, .white-box {
       display: none;
     }
   }
