@@ -7,27 +7,36 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- Navbar -->
     <nav class="navbar">
       <div class="content">
          <div class="logo">
             <a href="#"><img src="logo.png" alt="Language Center Untirta" height="60px"></a>
          </div>
+         
+         <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu" class="menu-toggle">
+         <div class="overlay"></div>
+         <label class="hamburger" for="menu-toggle">
+           <svg viewBox="0 0 32 32">
+             <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+             <path class="line" d="M7 16 27 16"></path>
+           </svg>
+         </label>
+         
          <ul class="nav-links" id="nav-links">
             <li><a href="#" class="home">Home</a></li>
             <li class="dropdown">
-              <a href="#">Profile</a>
+              <a href="#">Profile <span class="arrow-down"></span></a>
               <div class="dropdown-content">
-              <a href="#">Preface</a>
-              <a href="#">Our Team</a>
+                <a href="#">Preface</a>
+                <a href="#">Our Team</a>
               </div>
             </li>
             <li class="dropdown">
-              <a href="#">Our Services</a>
+              <a href="#">Our Services <span class="arrow-down"></span></a>
               <div class="dropdown-content">
-              <a href="#">Language Course</a>
-              <a href="#">Language Test</a>
-              <a href="#">Translation</a>
+                <a href="#">Language Course</a>
+                <a href="#">Language Test</a>
+                <a href="#">Translation</a>
               </div>
             </li>
             <li><a href="#">News</a></li>
@@ -35,17 +44,14 @@
          </ul>
       </div>
    </nav>
-    <!-- End Navbar -->
     
-    <!-- Main -->
-      <div class="isi">
-         <p class="massage">New Language, New Opportunites, New You</p>
-         <div class="white-box">
-        <img src="assets/qr-code.png" alt="Description of image">
-         </div>
-      </div>
+    <div class="isi">
+       <p class="massage">New Language, New Opportunites, New You</p>
+       <div class="white-box">
+          <img src="assets/qr-code.png" alt="Description of image">
+       </div>
+    </div>
 
-    <!-- End Main -->
-
+    <script src="script.js" defer></script>
   </body>
 </html>
